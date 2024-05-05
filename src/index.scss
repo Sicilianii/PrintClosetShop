@@ -1,10 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './app/styles/variables';
+@import './app/styles/normalize';
 
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Roboto',
   sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,7 +14,14 @@ body {
   //letter-spacing: 1px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+.container {
+  width: 100%;
+  max-width: 1440px;
+  max-height: 870px;
+  height: 100%;
+  padding: 0 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

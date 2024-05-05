@@ -10,12 +10,11 @@ function RootRouter() {
             path: '/',
             element: <Layout />,
             errorElement: <h1>Error page</h1>,
-            children: [
-                {
-                    path: '/getStart',
-                    element: <GetStart />,
-                }
-            ]
+        },
+        {
+            path: '/getStart',
+            element: <GetStart />,
+            errorElement: <h1>Error page</h1>
         }
     ])
 
