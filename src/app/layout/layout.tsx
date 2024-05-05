@@ -6,7 +6,9 @@ function Layout() {
     return (
         <>
             <header>header</header>
-            <Outlet />
+            <main>
+                <Outlet />
+            </main>
             <footer>footer</footer>
         </>
     );
