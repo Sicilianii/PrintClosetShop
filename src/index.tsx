@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import RootRouter from "./app/router";
 
 
 const root = ReactDOM.createRoot(
@@ -8,6 +9,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <h1 className={'font-bold text-amber-700'}>hello</h1>
+      <RootRouter />
   </React.StrictMode>
 );
