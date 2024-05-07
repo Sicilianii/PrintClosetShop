@@ -309,8 +309,11 @@ template {
   display: none;
 }
 
-body {
+* {
   margin: 0 auto;
+}
+
+body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -322,10 +325,6 @@ body {
   max-height: 870px;
   height: 100%;
   padding: 0 20px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=index.css.map */
