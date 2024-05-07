@@ -1,14 +1,16 @@
 import React from 'react';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import {Layout} from "../layout";
+import {PageLayout} from "../layouts";
 import Login from "../../pages/Login/Login";
+import Registration from "../../pages/Registration/Registration";
+import SingLayout from "../layouts/Sing.layout";
 
 function RootRouter() {
 
     const router = createBrowserRouter([
         {
             path: '/',
-            element: <Layout />,
+            element: <PageLayout />,
             errorElement: <h1>Error page</h1>,
             children: [
                 {
@@ -27,12 +29,16 @@ function RootRouter() {
         },
         {
             path: '/login',
-            element: <Login />,
+            element: <SingLayout />,
             errorElement: <h1>Error page</h1>,
             children: [
                 {
                     index: true,
                     element: <Login />
+                },
+                {
+                    path: '/login/registration',
+                    element: <Registration />
                 }
             ]
         }
