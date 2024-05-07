@@ -4,9 +4,11 @@
 @import './app/styles/variables';
 @import './app/styles/normalize';
 
+* {
+  margin: 0 auto;
+}
 
 body {
-  margin: 0 auto;
   font-family: 'Roboto',
   sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,8 +22,4 @@ body {
   max-height: 870px;
   height: 100%;
   padding: 0 20px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Layout} from "../layout";
-import GetStart from "../../pages/getStart/getStart";
+import Login from "../../pages/Login/Login";
 
 function RootRouter() {
 
@@ -10,11 +10,31 @@ function RootRouter() {
             path: '/',
             element: <Layout />,
             errorElement: <h1>Error page</h1>,
+            children: [
+                {
+                    index: true,
+                    element: <>SomeComponent</>
+                },
+                {
+                    path: '/catalogue',
+                    element: <>Catalogue</>
+                },
+                {
+                    path: '/catalogue/:id',
+                    element: <>Some Product by ID</>
+                }
+            ]
         },
         {
-            path: '/getStart',
-            element: <GetStart />,
-            errorElement: <h1>Error page</h1>
+            path: '/login',
+            element: <Login />,
+            errorElement: <h1>Error page</h1>,
+            children: [
+                {
+                    index: true,
+                    element: <Login />
+                }
+            ]
         }
     ])
 
