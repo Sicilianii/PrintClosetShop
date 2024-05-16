@@ -1,0 +1,44 @@
+.result {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &-wrapper {
+    margin: 0;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__query {
+      font-size: 24px;
+      text-transform: none;
+      text-align: left;
+      letter-spacing: 0px;
+      line-height: 30px;
+      white-space: pre-line;
+      word-break: break-word;
+    }
+
+    &__count {
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: none;
+      text-align: right;
+      letter-spacing: 0px;
+      line-height: 20px;
+      white-space: pre-line;
+      word-break: break-word;
+    }
+  }
+}

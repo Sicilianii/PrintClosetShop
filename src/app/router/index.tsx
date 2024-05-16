@@ -4,6 +4,7 @@ import {PageLayout} from "../layouts";
 import Login from "../../pages/Login/Login";
 import Registration from "../../pages/Registration/Registration";
 import SingLayout from "../layouts/Sing.layout";
+import Catalogue from "../../pages/Catalogue/Catalogue";
 
 function RootRouter() {
 
@@ -19,7 +20,7 @@ function RootRouter() {
                 },
                 {
                     path: '/catalogue',
-                    element: <>Catalogue</>
+                    element: <Catalogue />
                 },
                 {
                     path: '/catalogue/:id',

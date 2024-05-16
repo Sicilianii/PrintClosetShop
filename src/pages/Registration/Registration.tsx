@@ -1,6 +1,7 @@
 import React from 'react';
 import BlueButton from "../../shareds/ui/BlueButton/BlueButton";
 import {Link} from "react-router-dom";
+import './_Registration.scss';
 
 function Registration() {
     return (

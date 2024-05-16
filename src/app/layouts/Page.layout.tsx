@@ -52,7 +52,9 @@ function PageLayout() {
                 </div>
             </header>
             <main>
+
                 <Outlet/>
+
             </main>
             <footer className='footer'>
                 <div className='container footer-wrapper '>
