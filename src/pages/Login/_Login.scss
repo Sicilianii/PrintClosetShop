@@ -27,8 +27,8 @@
     box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
     border: 1px dashed $main-light-blue;
 
-    &:invalid {
-      border: 1px solid red;
+    &:user-invalid {
+      border: 1px solid #F19CBB;
     }
   }
 }
