@@ -1,10 +1,10 @@
 import React from 'react';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {PageLayout} from "../layouts";
-import Login from "../../pages/Login/Login";
-import Registration from "../../pages/Registration/Registration";
-import SingLayout from "../layouts/Sing.layout";
-import Catalogue from "../../pages/Catalogue/Catalogue";
+import Login from "@/pages/Login/Login";
+import Registration from "@/pages/Registration/Registration";
+import SingLayout from "@/layouts/Sing.layout";
+import Catalogue from "@/pages/Catalogue/Catalogue";
 
 function RootRouter() {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import ResultSearch from "../../widgets/ResultSearch/ResultSearch";
+import ResultSearch from "@/widgets/ResultSearch/ResultSearch";
 import './_Catalogue.scss';
 
 const Catalogue = () => {

@@ -1,18 +1,8 @@
-import React from 'react';
-import BlueButton from "@/shareds/ui/BlueButton/BlueButton";
-import {Link} from "react-router-dom";
-import './_Registration.scss';
+import React from "react";
 
-function Registration() {
+export default function Page() {
     return (
         <form className='start-form'>
-            <input
-                className='start-form__pass'
-                type="text"
-                required
-                pattern={'[A-Za-z]*'}
-                placeholder='Your Name'
-            />
             <input
                 className='start-form__email'
                 type="email"
@@ -28,10 +18,8 @@ function Registration() {
                 placeholder='Your Password'
             />
             <BlueButton paddingGtn={'17px 50px'} type={"submit"} fontSIzeBnt={'14px'}
-                        fontWeightBnt={'bold'}>Registration</BlueButton>
-            <span>Have an account? <Link to="/login" style={{color: '#79A6EC'}}>Login</Link></span>
+                        fontWeightBnt={'bold'}>Login</BlueButton>
+            <span>Don't have an account? <Link href="/login/registration" style={{color: '#79A6EC'}}>Registration</Link></span>
         </form>
     );
 }
-
-export default Registration;

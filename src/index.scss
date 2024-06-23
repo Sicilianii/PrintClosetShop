@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './app/styles/variables';
-@import './app/styles/normalize';
+@import 'styles/variables';
+@import 'styles/normalize';
 
 * {
   margin: 0 auto;

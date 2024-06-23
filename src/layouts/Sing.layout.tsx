@@ -21,7 +21,7 @@ function SingLayout() {
     return (
         <section className='container start'>
             <div className='start-banner'>
-                <img className='start-banner__img' src={require('../../shareds/assets/banner.jpg')}
+                <img className='start-banner__img' src={require('@/shareds/assets/banner.jpg')}
                      alt="Registration & Login"/>
             </div>
             <div className='start-des'>
