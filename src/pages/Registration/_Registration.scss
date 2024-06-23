@@ -1,0 +1,34 @@
+@import "src/app/styles/variables";
+
+.start-form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+
+  &__email, &__pass {
+    display: flex;
+    align-items: center;
+    max-width: 482px;
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+    opacity: 1;
+    outline: none;
+    background-color: $main-color-white;
+    border-radius: 18px;
+    padding: 0 20px 0 40px;
+    box-sizing: border-box;
+    color: $main-blue;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+    border: 1px dashed $main-light-blue;
+
+    &:user-invalid {
+      border: 1px solid rgb(239, 196, 223);
+    }
+  }
+}

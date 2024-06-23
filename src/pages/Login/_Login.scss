@@ -28,7 +28,11 @@
     border: 1px dashed $main-light-blue;
 
     &:user-invalid {
+
+      border: 1px solid rgb(239, 196, 223);
+
       border: 1px solid #F19CBB;
+
     }
   }
 }
